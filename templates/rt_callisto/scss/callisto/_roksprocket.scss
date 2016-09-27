@@ -1,0 +1,399 @@
+// RokSprocket Arrows Inheritance
+%sprocket-arrow {
+	color: darken($accent-color-1, 25%);
+	background: $accent-color-1;	
+	box-shadow: none;		
+	width: 30px;
+	height: 30px;	
+	font-size: 2rem;
+	font-weight: normal;
+	line-height: 28px;		
+}
+
+// RokSprocket Pagination Inheritance
+%sprocket-pagination {
+	background: transparent;
+	border: 2px solid;
+	border-radius: 100%;
+	width: 15px;
+	height: 15px;
+	padding: 0;
+	box-shadow: none;			
+	&.active {
+		color: darken($accent-color-1, 25%);
+		background: $accent-color-1;
+		border: 2px solid $accent-color-1;
+	}
+}
+
+// RokSprocket General
+.sprocket-features, .sprocket-grids, .sprocket-headlines, .sprocket-lists, .sprocket-mosaic, .sprocket-quotes, .sprocket-sliders, .sprocket-strips, .sprocket-tables, .sprocket-tabs {
+	*,  *:before,  *:after {
+		@include box-sizing(border-box !important);
+	}
+	.platform-content & {
+		*,  *:before,  *:after {
+			@include box-sizing(border-box !important);
+		}
+	}
+}
+
+// RokSprocket Features - Slideshow
+.sprocket-features {
+	&.layout-slideshow {
+		.sprocket-features-content {
+			width: 40%;
+			padding: 1rem;
+			@include breakpoint(desktop-range) {
+				width: 44%;
+			}
+			@include breakpoint(tablet-range) {
+				width: 55%;
+			}
+			@include breakpoint(mobile-only) {
+				width: 55%;
+				padding-top: 0;
+			}
+			@include breakpoint(small-mobile-range) {
+				top: 20px;
+				left: 1rem;
+			}
+		}
+		.sprocket-features-title,
+		.sprocket-features-desc {
+			background: transparent;
+		}
+		.sprocket-features-title {
+			font-size: $core-font-size + 2;
+			line-height: $core-line-height - 0.3;
+			font-family: $font-family-promo;	
+			margin: 0;
+			padding: 10px;
+			@include breakpoint(desktop-range) {
+				font-size: $core-font-size + 1.5;
+				line-height: $core-line-height - 0.4;
+			}
+			@include breakpoint(tablet-range) {
+				font-size: $core-font-size + 1;
+				line-height: $core-line-height - 0.5;
+			}
+			@include breakpoint(mobile-only) {
+				font-size: $core-font-size + 0.3;
+				padding-top: 0;
+			}
+			@include breakpoint(small-mobile-range) {
+				font-size: $core-font-size + 0.2;
+			}
+		}
+		.sprocket-features-desc {
+			color: $white;
+			opacity: 0.75;
+			font-size: $core-font-size + 0.05rem;
+			line-height: $core-line-height - 0.2;
+			padding: 10px;
+			@include breakpoint(tablet-range) {
+				font-size: $core-font-size;
+			}
+			@include breakpoint(mobile-only) {
+				display: none;
+			}
+			p {
+				margin-top: 0;
+			}
+		}
+		.sprocket-features-arrows {
+			.arrow {
+				margin-top: -15px;	
+				@extend %sprocket-arrow;
+				&.next {
+					right: 1rem;
+				}		
+				&.prev {
+					left: 1rem;
+				}
+				@include breakpoint(small-mobile-range) {
+					width: 20px;
+					height: 20px;
+					line-height: 18px;
+					&.next {
+						right: 0.3rem;
+					}		
+					&.prev {
+						left: 0.3rem;
+					}
+				}
+			}
+		}
+		.sprocket-features-pagination {
+			left: inherit;
+			right: 1rem;
+			@include breakpoint(mobile-only) {
+				left: 1rem;
+				text-align: center;
+				bottom: 0;
+			}
+			li {
+				@extend %sprocket-pagination;
+				display: block;
+				width: 30px;
+				height: 30px;
+				margin-bottom: 0.25rem;
+				@include breakpoint(mobile-only) {
+					width: 15px;
+					height: 15px;
+					display: inline-block;
+					vertical-align: bottom;
+					span {
+						display: none;
+						visibility: hidden;
+					}
+				}
+				span {
+					display: block;
+					line-height: 28px;
+					text-align: center;
+					font-size: 1rem;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}
+
+// RokSprocket Tabs
+.sprocket-tabs {
+	&.layout-top, &.layout-right, &.layout-bottom, &.layout-left {
+		.sprocket-tabs-nav {
+			background: transparent;
+			padding: 0 !important;
+			border: none;
+			> li {
+					> .sprocket-tabs-inner {
+					    border: none;
+					    border-radius: $border-radius;
+					    display: inline-block;
+						font-family: $font-family-title;
+						font-size: $core-font-size - 0.2;
+					    margin: 0;
+					    padding: 0.25rem 0.75rem;
+					    text-transform: uppercase;	
+					}
+				&.active, &.active:hover, &.active:focus {
+					> .sprocket-tabs-inner {
+						color: $white;
+					    background: rgba(255, 255, 255, 0.25);
+					}					
+				}	
+				&:hover, &:focus {
+					> .sprocket-tabs-inner {
+					    background: rgba(255, 255, 255, 0.15);
+					}					
+				}	
+			}
+		}
+	}
+	&.layout-top, &.layout-bottom {
+		.sprocket-tabs-nav > li > .sprocket-tabs-inner {
+			margin-right: 0.25rem;
+		}	
+	}	
+	&.layout-top {
+		.sprocket-tabs-nav {
+			margin-bottom: 1rem;
+		}	
+	}
+	&.layout-bottom {
+		.sprocket-tabs-nav {
+			margin-top: 1rem;
+		}		
+	}
+	&.layout-left, &.layout-right {
+		.sprocket-tabs-nav > li > .sprocket-tabs-inner {
+			margin-bottom: 0.25rem;
+		}	
+	}	
+	&.layout-left {
+		.sprocket-tabs-nav {
+			margin-right: 1rem;
+		}	
+	}
+	&.layout-right {
+		.sprocket-tabs-nav {
+			margin-left: 1rem;
+		}		
+	}	
+}
+
+// RokSprocket Headlines
+.sprocket-headlines {
+	background: transparent;
+	border: none;
+	margin: -0.5rem 0;
+	.sprocket-headlines-badge {
+		height: 2.6rem;
+	}
+	.sprocket-headlines-badge span {
+		font-family: $font-family-title;
+		font-size: $core-font-size - 0.1;
+		line-height: 1.25rem;
+		font-weight: normal;
+		text-transform: uppercase;
+		padding: 10px;
+		display: block;
+	}
+	.sprocket-headlines-list {
+		width: 80%;
+		padding: 10px;
+	}
+	.sprocket-headlines-text {
+	    font-size: 1rem;
+	}	
+	.sprocket-headlines-navigation {
+		padding: 0;
+		width: auto;
+		.arrow {
+			@extend %sprocket-arrow;		
+		}
+	}	
+}
+
+// RokSprocket Strips
+.sprocket-strips {
+	.sprocket-strips-item {
+		box-shadow: none;
+		border-radius: $border-radius;
+		overflow: hidden;
+	}
+	.sprocket-strips-content {
+		@include background(linear-gradient(transparent, fadeout($black, 20%)));
+		position: relative;
+		&:hover {
+			.sprocket-strips-title, .sprocket-strips-text, .readon span {
+				opacity: 0;
+			}
+			.readon:before, .readon:after {
+				opacity: 1;
+			}
+		}
+	}
+	.sprocket-strips-tag {
+	    position: absolute;
+	    top: 1rem;
+		color: $white;
+	    background: rgba(0, 0, 0, 0.75);
+	    border-radius: $border-radius;
+	    display: inline-block;
+		font-family: $font-family-title;
+		font-size: $core-font-size - 0.3;
+	    padding: 0.15rem 0.75rem;
+	    text-transform: uppercase;	    
+	}	
+	.sprocket-strips-title,
+	.sprocket-strips-title a {
+		color: $white;
+		font-size: $core-font-size + 0.25;
+		line-height: 1.5rem;
+		font-family: $font-family-promo;	
+		margin: 100% 0 0 0;			
+	}
+	.sprocket-strips-text {
+		opacity: 0.75;
+		line-height: 2.5rem;
+	}
+	.readon {
+		&:before, &:after {
+			position: absolute;
+			opacity: 0;
+			@include transition(opacity 0.35s);
+		}
+		&:before {
+			background: fadeout($accent-color-1, 25%);
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			content: "";
+		}
+		&:after {	
+			color: $white;
+			content: "\f15c";
+			top: 50%;
+			left: 50%;
+			font-size: 3.5rem;
+			font-family: FontAwesome;
+			margin-top: -1.5rem;
+			margin-left: -1.5rem;
+		}
+	}	
+	.sprocket-strips-title, .sprocket-strips-text, .readon span {
+		@include transition(opacity 0.35s);
+	}
+	.sprocket-strips-arrows {
+		.arrow {
+			@extend %sprocket-arrow;			
+		}
+	}
+	.sprocket-strips-pagination {
+		li {
+			@extend %sprocket-pagination;
+		}
+	}	
+	.sprocket-strips-overlay .css-loader-wrapper {
+		@include box-sizing(unset !important);
+	}
+}
+
+// RokSprocket Lists
+.sprocket-lists {
+	.sprocket-lists-title {
+		font-family: $font-family-title;
+		font-size: $core-font-size - 0.1 !important;
+		line-height: 1.35rem !important;
+		text-transform: uppercase;	
+		background: transparent;
+		border: none;	
+		.indicator {
+			color: $black;
+		    background: rgba(255, 255, 255, 0.5);
+		    border-radius: 3px;
+		    width: 20px;
+		    height: 20px;
+		    line-height: 20px;
+		}		
+	}
+	.sprocket-lists-container {
+		li {
+			padding: 0.5rem;
+			border-bottom: 1px solid $rule-color;
+			&.active {
+				background: $white;
+				color: $base-text-color;
+				.sprocket-lists-title {
+					line-height: 1rem !important;	
+					margin: 0.25rem 0 0 0 !important;
+				}	
+				.indicator {
+					background: rgba(0, 0, 0, 0.25);
+					color: rgba(0, 0, 0, 0.5);
+				}			
+			}
+		}
+	}
+	.readon {
+	    display: inline-block;
+	    margin-top: 0.35rem;
+	}	
+	.sprocket-lists-arrows {
+		.arrow {
+			@extend %sprocket-arrow;
+		}
+	}
+	.sprocket-lists-nav {
+		padding: 0.75rem 1rem;
+	}
+	.sprocket-lists-pagination {
+		li {
+			@extend %sprocket-pagination;
+		}
+	}	
+}

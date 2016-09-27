@@ -1,0 +1,5 @@
+enabled: '1'
+base: /
+menu: callisto-theme
+startLevel: '1'
+endLevel: '3'

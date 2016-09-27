@@ -1,0 +1,436 @@
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+children:
+  -
+    id: 34ddef6d-ca01-520a-7c37-5405831fb9b9
+    type: section
+    subtype: false
+    title: Header
+    attributes: {  }
+    children:
+      -
+        id: bbf37ff6-cd0c-e433-b86d-543fa2e0629f
+        type: container
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: f8289b51-361f-4d59-a99c-dfc172be3f17
+            type: grid
+            subtype: false
+            title: Untitled
+            attributes: {  }
+            children:
+              -
+                id: 12b02cbf-9128-433a-8b6d-d12afaef1075
+                type: block
+                subtype: false
+                title: Untitled
+                attributes:
+                  extra: {  }
+                  size: 100
+                children:
+                  -
+                    id: ffd271db-45c5-4538-b0cf-439a6fedd571
+                    type: pagecontent
+                    subtype: system-messages
+                    title: 'System Messages'
+                    attributes:
+                      enabled: 1
+                    children: {  }
+          -
+            id: a7dabffe-4e49-f9f0-83d1-8c7560aca1a5
+            type: grid
+            subtype: false
+            title: Untitled
+            attributes: {  }
+            children:
+              -
+                id: 6ff96720-7346-ba8e-08f5-4875419d3bfe
+                type: block
+                subtype: false
+                title: Untitled
+                attributes:
+                  size: 56
+                  class: g-logo-block
+                  extra: {  }
+                children:
+                  -
+                    id: 68a392aa-e0df-b0f9-eaf4-177a4f73f316
+                    type: particle
+                    subtype: logo
+                    title: Logo
+                    attributes:
+                      enabled: 1
+                      image: 'gantry-theme://images/logo/callisto.png'
+                      text: StartLink
+                      class: g-logo
+                    children: {  }
+              -
+                id: 585fce78-45f2-4e33-9abc-6e2339953f00
+                type: block
+                subtype: false
+                title: Untitled
+                attributes:
+                  class: flush
+                  extra: {  }
+                  size: 44
+                children:
+                  -
+                    id: 189995f6-8e3b-48fb-9386-dbcaad55f09c
+                    type: particle
+                    subtype: iconmenu
+                    title: 'Icon Menu'
+                    attributes:
+                      enabled: 0
+                      target: _parent
+                    children: {  }
+  -
+    id: b4dcdaec-6a1f-21f7-201a-b23a1ec34f60
+    type: section
+    subtype: false
+    title: Navigation
+    attributes: {  }
+    children:
+      -
+        id: c31a965e-f3f1-827d-59f1-e72cb8cf1af3
+        type: container
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: a7b922fa-5f90-6dbd-cb92-e262943ff7c3
+            type: grid
+            subtype: false
+            title: Untitled
+            attributes: {  }
+            children:
+              -
+                id: a19cb27c-8de8-4d2d-a2c5-cba09c1056ff
+                type: block
+                subtype: false
+                title: Untitled
+                attributes:
+                  size: 80
+                  class: g-menu-block
+                  extra: {  }
+                children:
+                  -
+                    id: 82bc9343-4fa5-4363-a228-b0641ed743db
+                    type: particle
+                    subtype: menu
+                    title: Menu
+                    attributes:
+                      enabled: 1
+                      menu: callisto-theme
+                      endLevel: '3'
+                    children: {  }
+              -
+                id: 6cfcff9e-d42f-468b-9b19-884084a03cd3
+                type: block
+                subtype: false
+                title: Untitled
+                attributes:
+                  size: 20
+                  extra: {  }
+                children:
+                  -
+                    id: cd0a082b-d4f6-499a-9e0c-4c992131788b
+                    type: particle
+                    subtype: social
+                    title: Social
+                    attributes:
+                      enabled: 1
+                      css:
+                        class: social-items
+                      items:
+                        -
+                          icon: 'fa fa-twitter fa-fw'
+                          text: ''
+                          link: 'http://twitter.com/rockettheme'
+                          name: Twitter
+                        -
+                          icon: 'fa fa-facebook fa-fw'
+                          text: ''
+                          link: 'http://facebook.com/rockettheme'
+                          name: Facebook
+                        -
+                          icon: 'fa fa-google fa-fw'
+                          text: ''
+                          link: 'http://plus.google.com/+rockettheme'
+                          name: Google
+                        -
+                          icon: 'fa fa-rss fa-fw'
+                          text: ''
+                          link: 'http://www.rockettheme.com/product-updates?rss'
+                          name: RSS
+                    children: {  }
+  -
+    id: c01c2943-68dc-23d3-5bcc-f732ec864379
+    type: section
+    subtype: false
+    title: Showcase
+    attributes:
+      class: box1
+      extra: {  }
+    children:
+      -
+        id: a3f102ce-a009-7026-2b5d-eb610f8e2c3d
+        type: container
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children: {  }
+  -
+    id: f32017fe-a739-4979-c73d-687853453774
+    type: container
+    subtype: false
+    title: Main
+    attributes:
+      id: g-main
+    children:
+      -
+        id: c03e6d9b-b6c4-6a23-7e1b-e140531cb989
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: 3f4e50d8-9c3a-e0f7-6a8a-300ed8a1f2c2
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 67
+            children:
+              -
+                id: ecf8eb01-6a78-3450-96bf-fa55a6fe57e1
+                type: section
+                subtype: false
+                title: Mainbar
+                attributes: {  }
+                children:
+                  -
+                    id: e1836731-2a0d-4a05-823e-86d52cea12f5
+                    type: grid
+                    subtype: false
+                    title: Untitled
+                    attributes: {  }
+                    children:
+                      -
+                        id: a915ab9e-6e95-4d65-a4a3-df51276a0d32
+                        type: block
+                        subtype: false
+                        title: Untitled
+                        attributes:
+                          size: 100
+                          class: nomarginall
+                          variations: box2
+                          extra: {  }
+                        children:
+                          -
+                            id: 79bdbb69-3825-4e7f-949e-6c122bc7528a
+                            type: pagecontent
+                            subtype: pagecontent
+                            title: 'Page Content'
+                            attributes:
+                              enabled: 1
+                            children: {  }
+          -
+            id: de2e07fe-69f6-c4ba-87fa-9bc7d62dba25
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 33
+            children:
+              -
+                id: 86829661-5bf1-835d-b165-211db5964ed7
+                type: section
+                subtype: false
+                title: Sidebar
+                attributes: {  }
+                children: {  }
+  -
+    id: 32c99089-b8da-5b91-8cdf-83058d373857
+    type: section
+    subtype: false
+    title: Extension
+    attributes: {  }
+    children:
+      -
+        id: 9f54407f-f4f1-87c6-8b75-a40458ef9029
+        type: container
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children: {  }
+  -
+    id: 36470484-bd0c-c55f-042e-1ccd14e8eab5
+    type: section
+    subtype: false
+    title: Footer
+    attributes: {  }
+    children:
+      -
+        id: 7cd7b676-577b-34a3-9fdb-cd2fb15ee380
+        type: container
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: 65218e15-df1c-4ec5-8857-06a8dd5b77b4
+            type: grid
+            subtype: false
+            title: Untitled
+            attributes: {  }
+            children:
+              -
+                id: 0bf69369-b5c2-4cdb-8905-3e64f397cd59
+                type: block
+                subtype: false
+                title: Untitled
+                attributes:
+                  size: 33.3333
+                  extra: {  }
+                children:
+                  -
+                    id: f90d7eec-68f5-41e9-b670-c5d3f23a8756
+                    type: particle
+                    subtype: custom
+                    title: 'About Callisto'
+                    attributes:
+                      enabled: 1
+                      html: "<h2 class=\"g-title\">About Callisto</h2>\n\n<p>All demo content is for sample purposes only, intended to represent a live site.</p>\n\n<p>The sample pages are intended to show how Callisto can be constructed on your site.</p>"
+                    children: {  }
+              -
+                id: 70650862-b349-4f26-9b50-bba0b8a3fa91
+                type: block
+                subtype: false
+                title: Untitled
+                attributes:
+                  size: 33.3333
+                  extra: {  }
+                children:
+                  -
+                    id: 4e64a142-9f7b-465e-a631-a83959a4f001
+                    type: particle
+                    subtype: newsletter
+                    title: Newsletter
+                    attributes:
+                      enabled: 1
+                      title: Newsletter
+                      headtext: 'Subscribe to our newsletter and stay updated on the latest developments and special offers!'
+                      uri: rocketthemeblog
+                    children: {  }
+              -
+                id: 07b99165-b94d-47cb-8104-785264976a81
+                type: block
+                subtype: false
+                title: Untitled
+                attributes:
+                  size: 33.3334
+                  extra: {  }
+                children:
+                  -
+                    id: 1594fbdd-57a4-486a-af8f-18fa01239bf7
+                    type: particle
+                    subtype: custom
+                    title: 'Sample Sitemap'
+                    attributes:
+                      enabled: 1
+                      html: "<h2 class=\"g-title\">Sample Sitemap</h2>\n\n<div class=\"g-grid\">\n\t<div class=\"g-block\">\n\t\t<ul class=\"nomarginall noliststyle\">\n\t\t\t<li><a href=\"#\">Home</a></li>\n\t\t\t<li><a href=\"#\">Features</a></li>\n\t\t\t<li><a href=\"#\">Typography</a></li>\n\t\t\t<li><a href=\"#\">Particles</a></li>\n\t\t\t<li><a href=\"#\">Variations</a></li>\n\t\t</ul>\t\t\n\t</div>\n\t<div class=\"g-block\">\n\t\t<ul class=\"nomarginall noliststyle\">\n\t\t\t<li><a href=\"#\">Buttons</a></li>\n\t\t\t<li><a href=\"#\">Pages</a></li>\n\t\t\t<li><a href=\"#\">Guide</a></li>\n\t\t\t<li><a href=\"#\">Support</a></li>\n\t\t\t<li><a href=\"#\">Download</a></li>\n\t\t</ul>\t\t\n\t</div>\t\n</div>"
+                    children: {  }
+  -
+    id: 1e0e4669-e192-e9e7-7eee-794b2c762968
+    type: section
+    subtype: false
+    title: Copyright
+    attributes: {  }
+    children:
+      -
+        id: ec9d5f10-d52d-a030-eabb-00a2fa6f1b77
+        type: container
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: f0cd32e0-563f-6bc7-931e-d2bfd886f964
+            type: grid
+            subtype: false
+            title: Untitled
+            attributes: {  }
+            children:
+              -
+                id: a02abf8c-38b8-91c6-d544-ed8c0b30a8e4
+                type: block
+                subtype: false
+                title: Untitled
+                attributes:
+                  class: center
+                  extra: {  }
+                  size: 100
+                children:
+                  -
+                    id: 6302ec03-afb3-3fc7-8082-659e63ea7687
+                    type: particle
+                    subtype: copyright
+                    title: Copyright
+                    attributes:
+                      enabled: 1
+                      date:
+                        start: '2016'
+                        end: now
+                      owner: 'StartLink '
+                    children: {  }
+  -
+    id: bb98d3a4-2b3c-248f-551b-e3958f018aec
+    type: offcanvas
+    subtype: false
+    title: Offcanvas
+    attributes:
+      name: 'Offcanvas Section'
+    children:
+      -
+        id: 952b5f6b-c914-4035-9e21-a1452a0f19ac
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: f990c1b3-f0ef-41b0-bd3f-61b15b1d76c4
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 100
+            children:
+              -
+                id: a7734236-af5c-4011-ad0e-3644e938f74b
+                type: particle
+                subtype: mobile-menu
+                title: 'Mobile Menu'
+                attributes: {  }
+                children: {  }
+  -
+    id: 3a2a116a-420f-3e9d-4152-c6e6f2fe8313
+    type: atoms
+    subtype: false
+    title: Atoms
+    attributes:
+      name: 'Atoms Section'
+    children:
+      -
+        id: f08a784f-b475-450d-bdc6-7c7d5680411d
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children: {  }

@@ -1,0 +1,71 @@
+#g5-container {//wrapper
+
+#configurations {
+
+    h4 > * {
+        vertical-align: middle;
+    }
+
+    ul {
+        @extend %list-reset;
+        .size-1-4 {
+            @include flex(0 23%);
+
+            @include breakpoint(small-mobile-range) {
+                @include flex(0 100%);
+            }
+        }
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .add-new {
+        cursor: pointer;
+        a {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+        }
+
+        i {
+            @include transform(translate(-50%, -50%));
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 70px;
+            color: #ddd;
+            display: block;
+
+            &.fa-spinner {
+                margin-left: -0.642857145em;
+                margin-top: -0.642857145em;
+            }
+        }
+
+        .page {
+            vertical-align: middle;
+            height: 357px;
+            line-height: 343px + 35px;
+            text-align: center;
+            position: relative;
+        }
+    }
+
+    .g-tooltip {
+        &:before {
+            bottom: 2.6rem;
+        }
+
+        &:after {
+            bottom: 3rem;
+        }
+    }
+}
+
+} //endwrapper

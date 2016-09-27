@@ -1,0 +1,31 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block stylesheets %}
+    {% for css in particle.css %}
+        {% set attr_extra = '' %}
+        {% if css.extra %}
+            {% for attributes in css.extra %}
+                {% for key, value in attributes %}
+                    {% set attr_extra = attr_extra ~ ' ' ~ key|e ~ '="' ~ value|e('html_attr') ~ '"' %}
+                {% endfor %}
+            {% endfor %}
+        {% endif %}
+
+        <link rel="stylesheet" href="{{ url(css.location) }}" type="text/css"{{ attr_extra|raw }} />
+    {% endfor %}
+{% endblock %}
+
+{% block javascript %}
+    {% for script in particle.javascript %}
+        {% set attr_extra = '' %}
+        {% if script.extra %}
+            {% for attributes in script.extra %}
+                {% for key, value in attributes %}
+                    {% set attr_extra = attr_extra ~ ' ' ~ key|e ~ '="' ~ value|e('html_attr') ~ '"' %}
+                {% endfor %}
+            {% endfor %}
+        {% endif %}
+
+        <script src="{{ url(script.location) }}" type="text/javascript"{{ attr_extra|raw }}></script>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,7 @@
+#g-main {
+	.g-container,
+	&.g-container {
+		background: $main-background;
+		color: $main-text-color;
+	}
+}

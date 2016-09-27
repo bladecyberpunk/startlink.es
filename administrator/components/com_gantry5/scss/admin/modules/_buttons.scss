@@ -1,0 +1,25 @@
+%button {
+    display: inline-block;
+    border-radius: $core-border-radius;
+    padding: 6px 12px;
+    vertical-align: middle;
+    font-size: $core-font-size;
+    line-height: inherit;
+    font-weight: $font-weight-medium;
+    cursor: pointer;
+    &:active {
+        margin: 1px 0 -1px 0;
+    }
+    i + span {
+        margin-left: 8px;
+    }
+}
+
+@mixin button-color($color, $text: $white) {
+    background: $color;
+    color: rgba($text, 0.9);
+    &:hover {
+        background: darken($color, 6%);
+        color: $text;
+    }
+}

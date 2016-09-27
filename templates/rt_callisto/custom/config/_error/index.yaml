@@ -1,0 +1,7 @@
+name: _error
+timestamp: 1452990763
+preset:
+  image: 'gantry-admin://images/layouts/error.png'
+  name: _error
+  timestamp: 1452990763
+positions: {  }
