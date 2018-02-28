@@ -1,6 +1,8 @@
 <?php
 /**
- * @package    Joomla.Site
+* Esto es una prueba de git
+*
+ * @package    Joomla.Site   
  *
  * @copyright  Copyright (C) 2005 - 2015 Open Source Matters, Inc. All rights reserved.
  * @license    GNU General Public License version 2 or later; see LICENSE.txt
@@ -9,7 +11,7 @@
 /**
  * Define the application's minimum supported PHP version as a constant so it can be referenced within the application.
  */
-define('JOOMLA_MINIMUM_PHP', '5.3.10');
+define('JOOMLA_MINIMUM_PHP', '5.3.11');
 
 if (version_compare(PHP_VERSION, JOOMLA_MINIMUM_PHP, '<'))
 {
